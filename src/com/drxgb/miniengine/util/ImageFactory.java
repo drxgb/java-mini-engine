@@ -28,7 +28,7 @@ public abstract class ImageFactory {
 	 * Se a imagem não for encontrada, retorne {@code null}.
 	 */
 	public static BufferedImage loadImage(String path) {
-		URL url = Game.class.getResource("/res/" + path);
+		URL url = Game.class.getResource("/res/" + path + ".png");
 		try {
 			return ImageIO.read(url);
 		} catch (IOException e) {
