@@ -18,8 +18,8 @@ public abstract class Stage implements Drawable, LifeCycle {
 	 * ===========================================================
 	 */
 	
-	private Integer width;
-	private Integer height;
+	protected Integer width;
+	protected Integer height;
 	
 	/*
 	 * ===========================================================
@@ -27,7 +27,7 @@ public abstract class Stage implements Drawable, LifeCycle {
 	 * ===========================================================
 	 */
 	
-	private List<GameObject> objects = new ArrayList<>();
+	protected List<GameObject> objects = new ArrayList<>();
 	
 	/*
 	 * ===========================================================
