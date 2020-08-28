@@ -14,7 +14,7 @@ public abstract class Stage implements Drawable, LifeCycle {
 	
 	/*
 	 * ===========================================================
-	 * 					*** ATRIBUTOS ***
+	 * 			*** ATRIBUTOS ***
 	 * ===========================================================
 	 */
 	
@@ -23,7 +23,7 @@ public abstract class Stage implements Drawable, LifeCycle {
 	
 	/*
 	 * ===========================================================
-	 * 					*** ASSOCIAÇÕES ***
+	 * 			*** ASSOCIAÇÕES ***
 	 * ===========================================================
 	 */
 	
@@ -31,7 +31,7 @@ public abstract class Stage implements Drawable, LifeCycle {
 	
 	/*
 	 * ===========================================================
-	 * 					*** CONSTRUTORES ***
+	 * 			*** CONSTRUTORES ***
 	 * ===========================================================
 	 */
 	
@@ -48,7 +48,7 @@ public abstract class Stage implements Drawable, LifeCycle {
 	
 	/*
 	 * ===========================================================
-	 * 					*** MÉTODOS IMPLEMENTADOS ***
+	 * 			*** MÉTODOS IMPLEMENTADOS ***
 	 * ===========================================================
 	 */
 	
@@ -68,7 +68,7 @@ public abstract class Stage implements Drawable, LifeCycle {
 	
 	/*
 	 * ===========================================================
-	 * 					*** GETTERS E SETTERS ***
+	 * 			*** GETTERS E SETTERS ***
 	 * ===========================================================
 	 */
 

@@ -14,6 +14,12 @@ import com.drxgb.miniengine.Game;
  * @version 1.0
  */
 public abstract class ImageFactory {
+	
+	/*
+	 * ===========================================================
+	 * 			*** MÉTODOS PÚBLICOS ***
+	 * ===========================================================
+	 */
 
 	/**
 	 * Carrega uma imagem dado por argumento.

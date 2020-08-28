@@ -15,7 +15,7 @@ public abstract class GameObject implements Drawable, LifeCycle, KeyCode {
 
 	/*
 	 * ===========================================================
-	 * 					*** ATRIBUTOS ***
+	 * 			*** ATRIBUTOS ***
 	 * ===========================================================
 	 */
 	
@@ -27,7 +27,7 @@ public abstract class GameObject implements Drawable, LifeCycle, KeyCode {
 	
 	/*
 	 * ===========================================================
-	 * 					*** CONSTRUTORES ***
+	 * 			*** CONSTRUTORES ***
 	 * ===========================================================
 	 */	
 	
@@ -46,7 +46,7 @@ public abstract class GameObject implements Drawable, LifeCycle, KeyCode {
 	
 	/*
 	 * ===========================================================
-	 * 					*** MÉTODOS PÚBLICOS ***
+	 * 			*** MÉTODOS PÚBLICOS ***
 	 * ===========================================================
 	 */
 	 
@@ -60,7 +60,7 @@ public abstract class GameObject implements Drawable, LifeCycle, KeyCode {
 
 	/*
 	 * ===========================================================
-	 * 					*** MÉTODOS IMPLEMENTADOS ***
+	 * 			*** MÉTODOS IMPLEMENTADOS ***
 	 * ===========================================================
 	 */
 	

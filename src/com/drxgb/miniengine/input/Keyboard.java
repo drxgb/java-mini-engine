@@ -21,7 +21,7 @@ public class Keyboard extends Input implements KeyListener {
 	
 	/*
 	 * ===========================================================
-	 * 					*** MÉTODOS IMPLEMENTADOS ***
+	 * 			*** MÉTODOS IMPLEMENTADOS ***
 	 * ===========================================================
 	 */
 
@@ -44,7 +44,7 @@ public class Keyboard extends Input implements KeyListener {
 	
 	/*
 	 * ===========================================================
-	 * 					*** GETTERS ***
+	 * 			*** GETTERS ***
 	 * ===========================================================
 	 */
 	

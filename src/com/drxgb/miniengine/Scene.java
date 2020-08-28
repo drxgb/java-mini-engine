@@ -15,14 +15,14 @@ public final class Scene implements Drawable, Updatable {
 
 	/*
 	 * ===========================================================
-	 * 					*** ASSOCIAÇÕES ***
+	 * 			*** ASSOCIAÇÕES ***
 	 * ===========================================================
 	 */
 	private Canvas canvas = new Canvas();
 	
 	/*
 	 * ===========================================================
-	 * 					*** CONSTRUTORES ***
+	 * 			*** CONSTRUTORES ***
 	 * ===========================================================
 	 */	
 	
@@ -38,7 +38,7 @@ public final class Scene implements Drawable, Updatable {
 	
 	/*
 	 * ===========================================================
-	 * 					*** MÉTODOS PRIVADOS ***
+	 * 			*** MÉTODOS PRIVADOS ***
 	 * ===========================================================
 	 */
 
@@ -78,7 +78,7 @@ public final class Scene implements Drawable, Updatable {
 	
 	/*
 	 * ===========================================================
-	 * 					*** MÉTODOS IMPLEMENTADOS ***
+	 * 			*** MÉTODOS IMPLEMENTADOS ***
 	 * ===========================================================
 	 */
 
@@ -98,7 +98,7 @@ public final class Scene implements Drawable, Updatable {
 	
 	/*
 	 * ===========================================================
-	 * 					*** GETTERS ***
+	 * 			*** GETTERS ***
 	 * ===========================================================
 	 */
 
