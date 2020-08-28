@@ -4,6 +4,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 import com.drxgb.miniengine.input.KeyCode;
+import com.drxgb.miniengine.input.Keyboard;
 
 /**
  * Classe genérica que representa o objeto no mapa do jogo.
@@ -24,6 +25,14 @@ public abstract class GameObject implements Drawable, LifeCycle, KeyCode {
 	protected Double x;
 	protected Double y;
 	protected BufferedImage sprite;
+	
+	/*
+	 * ===========================================================
+	 * 			*** ASSOCIAÇÕES ***
+	 * ===========================================================
+	 */
+	
+	protected Keyboard keyboard = Keyboard.getInstance();
 	
 	/*
 	 * ===========================================================
