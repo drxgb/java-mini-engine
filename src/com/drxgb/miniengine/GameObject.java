@@ -22,8 +22,8 @@ public abstract class GameObject implements Drawable, LifeCycle, KeyCode {
 	
 	private static GameObject self;
 	
-	protected Double x;
-	protected Double y;
+	public Double x;
+	public Double y;
 	protected BufferedImage sprite;
 	
 	/*
