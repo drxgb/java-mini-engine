@@ -18,6 +18,6 @@ public interface LifeCycle extends Updatable {
 	 * Realiza ações no momento em que o objeto se encerra.
 	 */
 	
-	void end();
+	void stop();
 	
 }

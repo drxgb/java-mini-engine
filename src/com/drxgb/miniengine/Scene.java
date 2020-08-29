@@ -55,6 +55,8 @@ public final class Scene implements Drawable, Updatable {
 	 */
 	private void render() {
 		BufferStrategy bs = canvas.getBufferStrategy();
+		if (bs == null)
+			canvas.createBufferStrategy(3);
 		do {
 			do {
 				draw(bs.getDrawGraphics());
@@ -72,6 +74,8 @@ public final class Scene implements Drawable, Updatable {
 		
 		StringBuilder title = new StringBuilder();
 		title.append(game.getTitle());
+		title.append(" - FPS: ");
+		title.append(Game.fps);
 		
 		game.getWindow().setTitle(title.toString());
 	}

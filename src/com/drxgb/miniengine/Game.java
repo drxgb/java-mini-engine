@@ -10,7 +10,7 @@ import com.drxgb.miniengine.input.Keyboard;
  * Classe principal da engine. Responsável por operar o jogo e controlar
  * seus atributos para que a aplicação continue estável. 
  * @author Dr.XGB
- * @version 1.0
+ * @version 1.1
  */
 public class Game implements LifeCycle {
 	
@@ -91,17 +91,6 @@ public class Game implements LifeCycle {
 	 */
 
 	/**
-	 * Intervalo entre um frame ao outro.
-	 */
-	private void sleep(long millis) {
-		try {
-			Thread.sleep(millis);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Gera um {@code Stage} genérico caso nenhum for definido antes.
 	 */
 	private void buildStage() {
@@ -111,7 +100,7 @@ public class Game implements LifeCycle {
 				public void start() {}
 	
 				@Override
-				public void end() {}				
+				public void stop() {}				
 			};
 		}
 	}
@@ -131,9 +120,37 @@ public class Game implements LifeCycle {
 		mainLoop = new Thread("Game Loop") {
 			@Override
 			public void run() {
-				scene.getCanvas().createBufferStrategy(2);
+				long lastTime = System.nanoTime();
+				double timePerTick = 1000000000.0 / 60.0;
+				
+				int ticks = 0;
+				int frames = 0;
+				
+				long loopTime = System.currentTimeMillis();
+				double delta = 0;
+				
+				scene.getCanvas().createBufferStrategy(3);
+				
 				while (running) {
-					update();
+					long elapsedTime = System.nanoTime();
+					delta += (elapsedTime - lastTime) / timePerTick;
+					lastTime = elapsedTime;
+					
+					while (delta >= 1) {
+						ticks++;
+						update();
+						delta--;
+					}
+					
+					frames = frames++;
+					scene.update();					
+					
+					if (System.currentTimeMillis() - loopTime >= 1000L) {
+						loopTime = System.currentTimeMillis();
+						fps = ticks;
+						frames = 0;
+						ticks = 0;
+					}
 				}
 			}
 		};
@@ -143,13 +160,11 @@ public class Game implements LifeCycle {
 	@Override
 	public void update() {		
 		stage.update();
-		scene.update();
 		Keyboard.getInstance().clear();		
-		sleep(5L);
 	}
 
 	@Override
-	public void end() {
+	public void stop() {
 		running = false;
 		System.exit(0);
 	}
