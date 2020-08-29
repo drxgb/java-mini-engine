@@ -84,6 +84,13 @@ public class Game implements LifeCycle {
 		return self;
 	}
 	
+	/**
+	 * Fecha o jogo.
+	 */
+	public static void quit() {
+		self.stop();
+	}
+	
 	/*
 	 * ===========================================================
 	 * 			*** MÉTODOS PRIVADOS ***
